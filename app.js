@@ -30,7 +30,7 @@ app.use(cors(corsOptions)) //cores
 app.use(helmet()) //Helmet 
 app.use(xss()) //xss 
 
-app.send("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Habit tracker API");
 });
 
